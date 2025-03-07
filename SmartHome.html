@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+h1 {
+    color: #a00000;
+}
+
+.container {
+    margin: 20px auto;
+    padding: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#dashboard-btn {
+    background-color: blue;
+    color: white;
+}
+
+.device-btn {
+    background-color: orange;
+    color: white;
+}
+
+.back-btn {
+    background-color: green;
+    color: white;
+}
+
+.graph-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.graph-container img {
+    width: 80%;
+    max-width: 800px;
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+canvas {
+    width: 60%;
+    max-width: 700px;
+}
+    </style>
+</head>
+<body>
+    <h1>Smart Home Energy Monitoring System</h1>
+    
+    <div class="container">
+        <button id="dashboard-btn">Dashboard</button>
+        <div class="devices">
+            <button class="device-btn" onclick="navigateToGraph()">Air Cooler</button>
+            <button class="device-btn" onclick="navigateToGraph()">Water Heater</button>
+            <button class="device-btn" onclick="navigateToGraph()">Washing Machine</button>
+        </div>
+    </div>
+</body>
+<script>
+    function navigateToGraph() {
+  // alert(window.location.href);
+    window.open("C:\SmartHome\\graph.html");
+}
+</script>
+</html>
+  
